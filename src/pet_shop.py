@@ -40,7 +40,7 @@ def remove_pet_by_name(shop_list, name):
 new_pet = {
         "name": "Rey",
         "pet_type": "cat",
-        "breed": "Blue",
+        "breed": "Moggy",
         "price": "750"
     }
 
@@ -49,5 +49,21 @@ def add_pet_to_stock(shop_list, new_pet):
 
 def get_stock_count(shop_list):
     return len(shop_list["pets"])
+
+def get_customer_cash(customers):
+    return customers["cash"]
+
+# def get_customer_cash(customers):
+#     for customer in customers:
+
+
+# def get_customer_cash(customers):
+#     customer = customers[0]
+#     return customer["cash"]
+
+# def get_customer_cash(customers, which_customer):
+#     for customer in customers:
+#         if customer == which_customer:
+#             return customer["cash"]
 
     
