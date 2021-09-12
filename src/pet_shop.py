@@ -14,7 +14,8 @@ def get_pets_sold(shop_list):
 def increase_pets_sold(shop_list, number_sold):
     update_pets_sold = get_pets_sold(shop_list) + number_sold
     shop_list["admin"]["pets_sold"] = update_pets_sold
-
+    return update_pets_sold
+    
 def get_stock_count(shop_list):
     return len(shop_list["pets"])
 
@@ -53,17 +54,10 @@ def get_stock_count(shop_list):
 def get_customer_cash(customers):
     return customers["cash"]
 
-# def get_customer_cash(customers):
-#     for customer in customers:
+def remove_customer_cash(customers, amount):
+    new_cash = get_customer_cash(customers) - amount
+    customers["cash"] = new_cash
+    return new_cash
 
 
-# def get_customer_cash(customers):
-#     customer = customers[0]
-#     return customer["cash"]
-
-# def get_customer_cash(customers, which_customer):
-#     for customer in customers:
-#         if customer == which_customer:
-#             return customer["cash"]
-
-    
+        
