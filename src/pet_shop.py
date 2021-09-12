@@ -38,13 +38,6 @@ def remove_pet_by_name(shop_list, name):
             shop_list["pets"].remove(pet)
     return shop_list["pets"]
 
-new_pet = {
-        "name": "Rey",
-        "pet_type": "cat",
-        "breed": "Moggy",
-        "price": "750"
-    }
-
 def add_pet_to_stock(shop_list, new_pet):
     shop_list["pets"].append(new_pet)
 
@@ -70,4 +63,5 @@ def add_pet_to_customer(customers, new_pet):
 def customer_can_afford_pet(customers, new_pet):
     if customers["cash"] >= new_pet["price"]:
             return True
+    return False
 
