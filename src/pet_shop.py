@@ -63,4 +63,33 @@ def get_customer_pet_count(customers):
     number_pets = customers["pets"]
     return len(number_pets)
 
+def add_pet_to_customer(customers, new_pet):
+    customers["pets"].append(new_pet)
+    return customers["pets"]
+
+# def get_customer(customers, customer_wanted):
+#     for customer in customers:
+#         if customer == customer_wanted:
+#             return customer
+
+# def add_pet_to_customer(customers, new_pet):
+#     selected_customer = get_customer(customers, customer_wanted)
+#     for pet in selected_customer:
+#         selected_customer.append(new_pet)
+
+# def add_pet_to_customer(customers, new_pet):
+#     for customer in customers:
+#         customer["pets"].append(new_pet)
+#     return customers["pets"]
+
+# def add_pet_to_customer(customers, new_pet):
+#     for customer in customers:
+#         more_pets = customer["pets"] + new_pet
+#     return more_pets
+
+# def add_pet_to_customer(customers, new_pet):
+#     for customer in customers:
+#     more_pets = customer["pets"] + new_pet
+
+
 
