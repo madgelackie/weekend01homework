@@ -36,4 +36,18 @@ def remove_pet_by_name(shop_list, name):
         if pet == pet_to_remove:
             shop_list["pets"].remove(pet)
     return shop_list["pets"]
+
+new_pet = {
+        "name": "Rey",
+        "pet_type": "cat",
+        "breed": "Blue",
+        "price": "750"
+    }
+
+def add_pet_to_stock(shop_list, new_pet):
+    shop_list["pets"].append(new_pet)
+
+def get_stock_count(shop_list):
+    return len(shop_list["pets"])
+
     
